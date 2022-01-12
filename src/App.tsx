@@ -1,10 +1,4 @@
 import './App.css';
-<<<<<<< HEAD
-
-function App() {
-  return (
-    <></>
-=======
 import {useEffect} from "react"
 import {useTheDispatch} from "./store/index"
 import {login} from "./store/slices/auth.slice"
@@ -41,7 +35,6 @@ function App() {
         />
       </Routes>
     </BrowserRouter>
->>>>>>> 0d8e99c (whole project)
   );
 }
 

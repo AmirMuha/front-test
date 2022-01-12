@@ -1,30 +1,3 @@
-<<<<<<< HEAD
-import { createSlice } from "@reduxjs/toolkit"
-
-interface InitialState {
-  isLoggedIn: boolean
-}
-const initialState = {
-  isLoggedIn: false
-}
-const authSlice = createSlice({
-  name: "auth",
-  initialState,
-  reducers: {
-    login(state) {
-      state.isLoggedIn = true;
-    },
-    logout(state) {
-      state.isLoggedIn = false;
-    },
-  }
-})
-
-export const {
-  login,
-  logout
-} = authSlice.actions;
-=======
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import {
   InitialAuthState,
@@ -114,5 +87,4 @@ const authSlice = createSlice({
   },
 });
 
->>>>>>> 0d8e99c (whole project)
 export default authSlice.reducer;
